@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "ReviewerApp"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "ReviewerApp"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "ReviewerApp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ReviewerApp"
+        }
+    },
+    "dependent_plugins": {}
+}

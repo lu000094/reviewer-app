@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; media-src *; img-src 'self' data:;"> 		
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/application.js"></script>
+        <script type="text/javascript" src="scripts/hammer.js"></script>
+        <title>Review?</title>
+    </head>
+    <body>
+        <section data-role="page" id="allReviews" class="inactive-page">
+            <div>
+                <h2>All reviews - for this device</h2>
+            </div>
+            <div id="allReviewsContent"></div>
+        </section>
+
+        <section data-role="page" id="details" class="inactive-page">
+            <div>
+                <h2>Review Details</h2>
+            </div>
+            <div id="reviewContent">
+            </div>
+        </section>
+
+        <section data-role="page" id="newReview" class="inactive-page">
+            <div class="app">
+                <h1>New Review</h1>
+                <div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Title</th>
+                                <td><input type="text" id="titleInput" /></td>
+                            </tr>
+                            <tr>
+                                <th>Review</th>
+                                <td>
+                                    <textarea rows="4" cols="21" id="reviewInput" ></textarea>
+                                 </td>
+                            </tr>
+                            <tr>
+                                <th>Rating</th>
+                                <td><input type="number" min="1" max="10" id="ratingInput"/></td>
+                            </tr>
+                            <tr>
+                                <th>Image</th>
+                                <td><img src="" alt="" id="image" style="width:150px;height:150px;" /></td>
+                            </tr>
+                            </tbody>
+                    </table>
+                </div>
+                <div>
+                    <br />
+                    
+                    <input type="button" id="takePic" value="Take Picture" />
+                    <input type="button" id="cancel" value="Cancel"/>
+                    <input type="button" id="submit" value="Submit" />
+                    
+                </div>
+                   
+             
+                <p></p>
+            </div>
+
+        </section>
+
+        <nav>
+            <a href="#allReviews" class="page-link">All Reviews</a>
+            <a href="#newReview" class="page-link">Add Review</a>
+        </nav>
+
+            
+</body>
+</html>
